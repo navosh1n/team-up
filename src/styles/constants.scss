@@ -1,0 +1,42 @@
+$main-font: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", Arial, sans-serif;
+
+$primary-color: #4a76a8;
+$primary-color-hover: #3d6898;
+
+$success-color: #67c23a;
+$warning-color: #e6a23c;
+$error-color: #f56c6c;
+
+$page-header-height: 45px;
+
+$page-content-max-width: 1200px;
+
+$page-horizontal-padding: 20px;
+$page-horizontal-padding-md: 5vw;
+$page-horizontal-padding-lg: 10vw;
+$page-horizontal-padding-xl: 15vw;
+
+$screen-sm-min: 768px;
+$screen-md-min: 992px;
+$screen-lg-min: 1200px;
+$screen-xl-min: 1920px;
+
+@mixin page-horizontal-padding {
+  padding-left: $page-horizontal-padding;
+  padding-right: $page-horizontal-padding;
+
+  @media (min-width: $screen-md-min) {
+    padding-left: $page-horizontal-padding-md;
+    padding-right: $page-horizontal-padding-md;
+  }
+
+  @media (min-width: $screen-lg-min) {
+    padding-left: $page-horizontal-padding-lg;
+    padding-right: $page-horizontal-padding-lg;
+  }
+
+  @media (min-width: $screen-xl-min) {
+    padding-left: $page-horizontal-padding-lg;
+    padding-right: $page-horizontal-padding-lg;
+  }
+}
